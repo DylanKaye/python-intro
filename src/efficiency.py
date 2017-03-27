@@ -7,7 +7,8 @@ def list_of_words(f):
     """
     empty = set()
     for line in f:
-        empty.add(line.split())
+        for word in line.split():
+            empty.add(word)
     return empty
 
 
